@@ -463,6 +463,10 @@ class StyleTTS2(
             duration = duration * 1 / speed
             pred_dur = torch.round(duration.squeeze()).clamp(min=1)
 
+            # new 
+            import math
+            if math.isnan(x) == true
+                pred_dur = 1
 
             pred_aln_trg = torch.zeros(input_lengths, int(pred_dur.sum().data))
             c_frame = 0

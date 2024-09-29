@@ -465,7 +465,7 @@ class StyleTTS2(
 
             # new 
             import math
-            if math.isnan(x) == true
+            if math.isnan(pred_dur) == true
                 pred_dur = 1
 
             pred_aln_trg = torch.zeros(input_lengths, int(pred_dur.sum().data))
